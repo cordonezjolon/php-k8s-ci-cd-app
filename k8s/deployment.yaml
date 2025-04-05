@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
         - name: php-app
+          imagePullPolicy: Always
           image: cordonezjolon/php-k8s-app:latest
           ports:
             - containerPort: 80
